@@ -2,7 +2,10 @@
 
 [介绍](README.zh.md)
 
-
+# 工作
+- [Benchmarks](./work/benchmarks.md)
+    - [String Hash](./work/benchmarks/strhash.md)
+    - [Map](./work/benchmarks/map.md)
 # 杂七杂八
 - [部署 mdbook 到 github pages](./misc/deploy-mdbook.md)
 - [Arch Linux]()

@@ -35,5 +35,12 @@ shadow-exclude = [
 
 重启 picom 即可
 
+### 字体发虚
+打开 wine 设置
+```
+# /opt/apps/com.qq.weixin.deepin/files/run.sh winecfg
+```
+graphics 选项卡里调高DPI即可
+
 ### 部分 Emoji 为方块
 尚未解决

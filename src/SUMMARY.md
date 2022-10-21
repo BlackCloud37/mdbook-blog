@@ -11,6 +11,7 @@
 - [Arch Linux]()
     - [Arch 休眠到交换文件](./misc/arch/arch-hibernate.md)
     - [Wechat](./misc/arch/wechat.md)
+    - [i3wm 切换到 sway](./misc/arch/i3wm2sway.md)
 - [硬件]()
     - [5600x超频](./misc/hardware/5600x-oc.md)
 - [QNAP NAS]()

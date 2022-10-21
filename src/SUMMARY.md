@@ -15,6 +15,7 @@
 - [硬件]()
     - [5600x超频](./misc/hardware/5600x-oc.md)
 - [QNAP NAS]()
+    - [auththu](./misc/qnap/auththu.md)
     - [Crontab](./misc/qnap/crontab.md)    
     - [Hlink Docker](./misc/qnap/hlink.md)
     - [qBittorrent](./misc/qnap/qBittorrent.md)

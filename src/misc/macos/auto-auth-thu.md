@@ -75,3 +75,8 @@ fi
 ## 5. Trouble Shooting
 
 WiFi 名目前是字符串匹配且只有 Tsinghua/Tsinghua-5G，如果需要其他的，加在 `.wifiConnected` 里
+
+## 6. Reference
+- https://apple.stackexchange.com/questions/139267/run-program-if-connected-to-specific-wifi
+- https://github.com/p2/WifiWatch
+- https://github.com/z4yx/GoAuthing

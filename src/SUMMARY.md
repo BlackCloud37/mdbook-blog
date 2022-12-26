@@ -21,3 +21,4 @@
     - [Crontab](./misc/qnap/crontab.md)    
     - [Hlink Docker](./misc/qnap/hlink.md)
     - [qBittorrent](./misc/qnap/qBittorrent.md)
+    - [LEDE 旁路由](./misc/qnap/lede.md)

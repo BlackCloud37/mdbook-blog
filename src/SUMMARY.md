@@ -28,3 +28,5 @@
     - [Hlink Docker](./misc/qnap/hlink.md)
     - [qBittorrent](./misc/qnap/qBittorrent.md)
     - [LEDE 旁路由](./misc/qnap/lede.md)
+- [库克]()
+    - [吐司](./misc/cook/toast.md)

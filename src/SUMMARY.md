@@ -11,6 +11,7 @@
         - [Idioms](./work/programming/c_c++/idioms.md)
         - [lambda, std::function, etc](./work/programming/c_c++/function.md)
         - [malloc c++ class 而不调用构造函数引发的 segfault](./work/programming/c_c++/malloc_cpp_class_cause_segfault.md)
+        - [priority queue with updatable priority](./work/programming/c_c++/priority_queue_with_updatable_priority.md)
         <!-- - [profiling](./work/programming/c_c++/profiling.md) -->
 # 杂七杂八
 - [部署 mdbook 到 github pages](./misc/deploy-mdbook.md)

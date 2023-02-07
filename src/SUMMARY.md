@@ -15,6 +15,7 @@
         <!-- - [profiling](./work/programming/c_c++/profiling.md) -->
 # 杂七杂八
 - [部署 mdbook 到 github pages](./misc/deploy-mdbook.md)
+- [实现校外 IPv4 访问北邮人](./misc/ipv4-byr.md)
 - [Arch Linux]()
     - [Arch 休眠到交换文件](./misc/arch/arch-hibernate.md)
     - [Wechat](./misc/arch/wechat.md)

@@ -46,3 +46,6 @@
 
 ## Reference
 - [在Vultr上搭建SSR服务](https://lccurious.github.io/2018/03/03/vlutr-ssr/)
+- [实现校园网IPv6免流量上网与科学上网 | 安装SSR与开启BBR加速](https://www.jixing.one/vps/ssr-bbr/)
+- [Byr 校外代理下载](https://byr.pt/forums.php?action=viewtopic&forumid=9&topicid=10862)
+    - 这个帖子是 byr 内部的，说是需要将代理改为 http 而非 socks5 才能下载有速度

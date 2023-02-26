@@ -207,6 +207,17 @@ firewall-cmd --zone=external --add-port=2222/tcp --permanent
 firewall-cmd --zone=external --add-forward-port=port=2222:proto=tcp:toport=22:toaddr=127.0.0.1 --permanent
 ```
 
+### 9. qBittorrent
+安装配置参考 [archlinux-install-qbittorrent-nox-setup-webui](https://blog.raw.pm/en/archlinux-install-qbittorrent-nox-setup-webui/)
+
+### 10. Plex
+安装可以用 snap
+
+需要配置文件权限才可以添加资料库，见 [plex-wont-enter-my-home-directory-or-other-partitions](https://askubuntu.com/questions/150909/plex-wont-enter-my-home-directory-or-other-partitions)
+
+### 11. Clash
+见 [Arch Linux Clash 安装配置记录](https://blog.linioi.com/posts/clash-on-arch/)
+
 ### TODOs
 - [ ] 去广告
 - [ ] UPnP

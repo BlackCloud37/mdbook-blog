@@ -218,11 +218,6 @@ firewall-cmd --zone=external --add-forward-port=port=2222:proto=tcp:toport=22:to
 ### 11. Clash
 见 [Arch Linux Clash 安装配置记录](https://blog.linioi.com/posts/clash-on-arch/)
 
-### TODOs
-- [ ] 去广告
-- [ ] UPnP
-- [ ] Plex
-
 ## Trouble Shooting
 遇到的最大问题就是，一开始 NAT 用了 networkd 自带的 IPMasquerade=both，然后想改成 firewalld，配置了很多遍都没成功，需要注意的点有：
 - 先关闭 firewalld

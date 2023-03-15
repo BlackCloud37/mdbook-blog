@@ -25,6 +25,8 @@
     - [自动认证 Tsinghua Wifi](./misc/macos/auto-auth-thu.md)
 - [硬件]()
     - [5600x超频](./misc/hardware/5600x-oc.md)
+- [TrueNAS Scale]()
+    - [Plex](./misc/truenas/plex.md)
 - [selfhosted]()
     - [selfhosted 整体组网方案](./misc/selfhosted/network-topology.md)
     - [Arch as Router](./misc/router/arch-router.md)

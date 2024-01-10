@@ -30,6 +30,7 @@
 - [TrueNAS Scale]()
     - [Plex](./misc/truenas/plex.md)
     - [APP 持续 deploying 问题](./misc/truenas/app-deploying.md)
+    - [用 clusterissuer 自动申请 SSL 证书](./misc/truenas/clusterissuer.md)
 - [selfhosted]()
     - [selfhosted 整体组网方案](./misc/selfhosted/network-topology.md)
     - [Arch as Router](./misc/router/arch-router.md)

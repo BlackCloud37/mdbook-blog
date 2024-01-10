@@ -1,5 +1,7 @@
 # Wechat
 
+更新: 现在使用 com.qq.weixin.spark 包的微信，然后将其用的 wine 替换成 wine-for-wechat
+
 使用打包好的 [Deepin Wine Wechat Arch](https://github.com/vufa/deepin-wine-wechat-arch)，仓库中已经给出了详细的安装方法、字体更换等
 
 ## Sway

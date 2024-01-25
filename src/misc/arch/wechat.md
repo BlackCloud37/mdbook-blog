@@ -1,10 +1,31 @@
 # Wechat
 
+## 20240125更新
+
+备忘目前完整的微信安装流程
+1. 装 wine-for-wechat 和 wine-wechat-setup
+2. [https://github.com/tom-snow/wechat-windows-versions]() 找老版本的微信安装包, 例如 Wechat v3.7.6.44
+3. 用 wine-wechat-setup 安装微信, 会一并创建 ~/.local/lib/wine-wechat 这个 WINEPREFIX
+4. 解决字体问题
+  1. 参考 [https://blog.gloriousdays.pw/2018/12/01/optimize-wine-font-rendering]() 下载 wine 的字体包
+  2. 用 winetricks 装一些包, 参考 [https://mephisto.cc/tech/wine-wechat/]()
+     ```
+     WINEPREFIX=~/.local/lib/wine-wechat winetricks riched20
+     WINEPREFIX=~/.local/lib/wine-wechat winetricks allfonts
+     WINEPREFIX=~/.local/lib/wine-wechat winetricks settings fontsmooth=rgb
+     ```
+  3. 链接 linux 的字体到 wine
+    `cd ~/.local/lib/wine-wechat/default/drive_c/windows/Fonts && for i in /usr/share/fonts/**/*.{ttf,otf}; do ln -s "$i" ; done`
+5. 重启微信期待不出问题
+
+如果需要改 dpi 等, 可以 `wechat -c`
+
+## Archive
 更新: 现在使用 com.qq.weixin.spark 包的微信，然后将其用的 wine 替换成 wine-for-wechat
 
 使用打包好的 [Deepin Wine Wechat Arch](https://github.com/vufa/deepin-wine-wechat-arch)，仓库中已经给出了详细的安装方法、字体更换等
 
-## Sway
+### Sway
 从 i3 迁移到 sway 后, Deepin Wine Wechat 的微信窗口黑屏, 暂时没找到解决办法, 改用 wine-for-wechat 后解决
 
 安装流程
@@ -17,8 +38,8 @@
 
 不过仍然没解决 emoji 为方块的问题
 
-## Trouble shotting
-### 窗口阴影
+### Trouble shotting
+#### 窗口阴影
 换到 i3wm 后，混成器使用了 picom，此时使用 Deepin Wine Wechat 会发现整个窗口被灰色遮罩，且有弧形的黑色阴影，关闭 picom 后上述情况消失，因此判断是 picom 的问题
 
 查阅 arch wiki 上 picom 条目发现，picom 可以针对窗口禁用半透明、阴影等特性，其规则可以细化到匹配窗口名称
@@ -50,12 +71,12 @@ shadow-exclude = [
 
 重启 picom 即可
 
-### 字体发虚
+#### 字体发虚
 打开 wine 设置
 ```
 # /opt/apps/com.qq.weixin.deepin/files/run.sh winecfg
 ```
 graphics 选项卡里调高DPI即可
 
-### 部分 Emoji 为方块
+#### 部分 Emoji 为方块
 尚未解决

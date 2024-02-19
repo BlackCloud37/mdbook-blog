@@ -4,19 +4,11 @@
 
 备忘目前完整的微信安装流程
 1. 装 wine-for-wechat 和 wine-wechat-setup
-2. [https://github.com/tom-snow/wechat-windows-versions]() 找老版本的微信安装包, 例如 Wechat v3.7.6.44
+2. [https://github.com/tom-snow/wechat-windows-versions]() 找老版本的微信安装包, 例如 Wechat v3.8.0.33
+   > wine-for-wechat 会默认使用 prefix / 'drive_c/Program Files/Tencent/WeChat' 作为 WeChat.exe 的目录, 安装微信时需要注意, 旧版本微信可能会默认安装到 Program Files x86 下
 3. 用 wine-wechat-setup 安装微信, 会一并创建 ~/.local/lib/wine-wechat 这个 WINEPREFIX
-4. 解决字体问题
-  1. 参考 [https://blog.gloriousdays.pw/2018/12/01/optimize-wine-font-rendering]() 下载 wine 的字体包
-  2. 用 winetricks 装一些包, 参考 [https://mephisto.cc/tech/wine-wechat/]()
-     ```
-     WINEPREFIX=~/.local/lib/wine-wechat winetricks riched20
-     WINEPREFIX=~/.local/lib/wine-wechat winetricks allfonts
-     WINEPREFIX=~/.local/lib/wine-wechat winetricks settings fontsmooth=rgb
-     ```
-  3. 链接 linux 的字体到 wine
-    `cd ~/.local/lib/wine-wechat/default/drive_c/windows/Fonts && for i in /usr/share/fonts/**/*.{ttf,otf}; do ln -s "$i" ; done`
-5. 重启微信期待不出问题
+  - 此时安装程序的字体可能为方块, 建议在创建完 WINPREFIX 之后即在字体目录下放置必要的字体, 参考 [https://blog.gloriousdays.pw/2018/12/01/optimize-wine-font-rendering](https://blog.gloriousdays.pw/2018/12/01/optimize-wine-font-rendering)
+  - 字体问题解决后方可设置微信安装目录
 
 如果需要改 dpi 等, 可以 `wechat -c`
 

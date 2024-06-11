@@ -40,5 +40,6 @@
     - [qBittorrent](./misc/qnap/qBittorrent.md)
     - [LEDE 旁路由](./misc/qnap/lede.md)
 - [库克]()
+    - [番茄肉酱(意面)](./misc/cook/bolognese.md)
     - [吐司](./misc/cook/toast.md)
     - [贝果](./misc/cook/bagel.md)

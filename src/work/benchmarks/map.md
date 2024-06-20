@@ -23,3 +23,14 @@
 |       26,675,597.00 |               37.49 |    1.2% |  185,300,938.00 |  46,039,048.00 |    5.1% |      0.30 | `dense_hash_map:sequential`
 |        6,950,046.00 |              143.88 |    0.8% |   38,400,593.00 |   3,200,143.00 |    0.0% |      0.08 | `array(test):sequential`
 ```
+
+
+- 查找短字符串(例如交易对字符串), 期望使用 std::string_view 来查找(例如解析 json 时)
+```
+|               ns/op |                op/s |    err% |     total | AliasMap
+|--------------------:|--------------------:|--------:|----------:|:---------
+|       15,420,964.00 |               64.85 |    0.2% |      0.17 | `std::map<std::string, val>`
+|        9,693,194.00 |              103.17 |    0.1% |      0.11 | `std::map<uint64_t, val> (with murmurhash64)`
+|        2,988,340.00 |              334.63 |    0.4% |      0.03 | `std::unordered_map<uint64_t, val> (with murmurhash64)`
+|        3,005,004.00 |              332.78 |    0.4% |      0.03 | `robin_hood::unordered_map<uint64_t, val> (with murmurhash64)`
+```

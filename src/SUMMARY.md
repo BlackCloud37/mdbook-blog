@@ -6,6 +6,7 @@
 - [Benchmarks](./work/benchmarks.md)
     - [String Hash](./work/benchmarks/strhash.md)
     - [Map](./work/benchmarks/map.md)
+    - [simdjson](./work/benchmarks/simdjson.md)
 - [Programming]()
     - [C/C++]()
         - [Idioms](./work/programming/c_c++/idioms.md)

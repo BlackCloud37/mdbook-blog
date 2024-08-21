@@ -31,6 +31,8 @@ jobs:
         mv ../book/* .
         # Copy root *.html to .
         cp ../*.html .
+        # Copy CNAME to .
+        cp ../CNAME .
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force --set-upstream origin gh-pages

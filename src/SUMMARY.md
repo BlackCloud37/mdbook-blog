@@ -47,3 +47,4 @@
     - [番茄牛腩](./misc/cook/番茄牛腩.md)
     - [吐司](./misc/cook/toast.md)
     - [贝果](./misc/cook/bagel.md)
+    - [巴斯克](./misc/cook/basque.md)

@@ -4,6 +4,7 @@
 
 # 工作
 - [Benchmarks](./work/benchmarks.md)
+    - [Latency Numbers Every Programmer Should Know](./work/benchmarks/latency.md)
     - [String Hash](./work/benchmarks/strhash.md)
     - [Map](./work/benchmarks/map.md)
     - [simdjson](./work/benchmarks/simdjson.md)

@@ -56,9 +56,16 @@ gh-pages 分支下的网页会被部署到 `<Username>.github.io/<Reponame>` 域
 
 参考 [GitHub Pages Custom Domain](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
-在 Settings-Pages 里设置自定义域名为顶级域名, 并添加两条 DNS 记录, 指向 github pages 的服务器
-- A, @  , 185.199.108.153
-- A, www, 185.199.108.153
+1. 在 master 的根目录下添加 `CNAME` 文件，内容为顶级域名，如 `blackcloud37.com`
+2. 部署脚本里 copy CNAME 到 gh-pages
+    ```bash
+    mv ../book/* .
+    cp ../CNAME . # COPY CNAME
+    git add .
+    ```
+3. 添加两条 DNS 记录, 指向 github pages 的服务器
+  - `A, @  , 185.199.108.153`
+  - `A, www, 185.199.108.153`
 
 ## 5. Trouble shooting
 

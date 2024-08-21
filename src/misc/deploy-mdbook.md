@@ -50,8 +50,17 @@ jobs:
 
 gh-pages 分支下的网页会被部署到 `<Username>.github.io/<Reponame>` 域名下，如本项目即为 `blackcloud37.github.io/mdbook-blog`，直接访问即可
 
+如果希望部署到 `<Username>.github.io`, 则仓库的名字需要为 `<Username>.github.io`，如 [BlackCloud37.github.io]
 
-## 4. Trouble shooting
+## 4. 自定义域名
+
+参考 [GitHub Pages Custom Domain](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+在 Settings-Pages 里设置自定义域名为顶级域名, 并添加两条 DNS 记录, 指向 github pages 的服务器
+- A, @  , 185.199.108.153
+- A, www, 185.199.108.153
+
+## 5. Trouble shooting
 
 第一次推送触发 github action 后，gh-pages 分支存在并且已经包含产物，但是访问 `blackcloud37.github.io/mdbook-blog` 提示 404，参考 `https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages`，推送一个空 commit 到 gh-pages 分支即可：
 ```bash

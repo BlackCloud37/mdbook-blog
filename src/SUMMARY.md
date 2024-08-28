@@ -48,3 +48,4 @@
     - [吐司](./misc/cook/toast.md)
     - [贝果](./misc/cook/bagel.md)
     - [巴斯克](./misc/cook/basque.md)
+    - [斑斓椰汁糕](./misc/cook/padan-coconut-cake.md)

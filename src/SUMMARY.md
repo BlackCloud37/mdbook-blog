@@ -16,6 +16,8 @@
         - [priority queue with updatable priority](./work/programming/c_c++/priority_queue_with_updatable_priority.md)
         - [atomic](./work/programming/c_c++/atomic.md)
         <!-- - [profiling](./work/programming/c_c++/profiling.md) -->
+    - [Python]()
+        - [gc的性能问题](./work/programming/python/gc_performance.md)
 # 杂七杂八
 - [部署 mdbook 到 github pages](./misc/deploy-mdbook.md)
 - [实现校外 IPv4 访问北邮人](./misc/ipv4-byr.md)
